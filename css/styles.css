@@ -1,255 +1,143 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
+@import url(http://fonts.googleapis.com/css?family=Exo:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(http://fonts.googleapis.com/css?family=Oxygen:400,300,700);
+/* -- 
+  font-family: 'Exo', sans-serif;
+  font-family: 'Oxygen', sans-serif;
+-- */
 
-body {
-  padding:50px;
-  font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#777;
-  font-weight:300;
-}
+/* We use this media query to add styles to any device that supports media queries */
+@media only screen {
 
-h1, h2, h3, h4, h5, h6 {
-  color:#222;
-  margin:0 0 20px;
-}
-
-p, ul, ol, table, pre, dl {
-  margin:0 0 20px;
-}
-
-h1, h2, h3 {
-  line-height:1.1;
-}
-
-h1 {
-  font-size:28px;
-}
-
-h2 {
-  color:#393939;
-}
-
-h3, h4, h5, h6 {
-  color:#494949;
-}
-
-a {
-  color:#39c;
-  font-weight:400;
-  text-decoration:none;
-}
-
-a small {
-  font-size:11px;
-  color:#777;
-  margin-top:-0.6em;
-  display:block;
-}
-
-.wrapper {
-  width:860px;
-  margin:0 auto;
-}
-
-blockquote {
-  border-left:1px solid #e5e5e5;
-  margin:0;
-  padding:0 0 0 20px;
-  font-style:italic;
-}
-
-code, pre {
-  font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
-  color:#333;
-  font-size:12px;
-}
-
-pre {
-  padding:8px 15px;
-  background: #f8f8f8;  
-  border-radius:5px;
-  border:1px solid #e5e5e5;
-  overflow-x: auto;
-}
-
-table {
-  width:100%;
-  border-collapse:collapse;
-}
-
-th, td {
-  text-align:left;
-  padding:5px 10px;
-  border-bottom:1px solid #e5e5e5;
-}
-
-dt {
-  color:#444;
-  font-weight:700;
-}
-
-th {
-  color:#444;
-}
-
-img {
-  max-width:100%;
-}
-
-header {
-  width:270px;
-  float:left;
-  position:fixed;
-}
-
-header ul {
-  list-style:none;
-  height:40px;
-  
-  padding:0;
-  
-  background: #eee;
-  background: -moz-linear-gradient(top, #f8f8f8 0%, #dddddd 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
-  background: -webkit-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-  background: -o-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-  background: -ms-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-  background: linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-  
-  border-radius:5px;
-  border:1px solid #d2d2d2;
-  box-shadow:inset #fff 0 1px 0, inset rgba(0,0,0,0.03) 0 -1px 0;
-  width:270px;
-}
-
-header li {
-  width:89px;
-  float:left;
-  border-right:1px solid #d2d2d2;
-  height:40px;
-}
-
-header ul a {
-  line-height:1;
-  font-size:11px;
-  color:#999;
-  display:block;
-  text-align:center;
-  padding-top:6px;
-  height:40px;
-}
-
-strong {
-  color:#222;
-  font-weight:700;
-}
-
-header ul li + li {
-  width:88px;
-  border-left:1px solid #fff;
-}
-
-header ul li + li + li {
-  border-right:none;
-  width:89px;
-}
-
-header ul a strong {
-  font-size:14px;
-  display:block;
-  color:#222;
-}
-
-section {
-  width:500px;
-  float:right;
-  padding-bottom:50px;
-}
-
-small {
-  font-size:11px;
-}
-
-hr {
-  border:0;
-  background:#e5e5e5;
-  height:1px;
-  margin:0 0 20px;
-}
-
-footer {
-  width:270px;
-  float:left;
-  position:fixed;
-  bottom:50px;
-}
-
-@media print, screen and (max-width: 960px) {
-  
-  div.wrapper {
-    width:auto;
-    margin:0;
+  body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo', sans-serif;
+    font-size: 100%;
   }
-  
-  header, section, footer {
-    float:none;
-    position:static;
-    width:auto;
-  }
-  
-  header {
-    padding-right:320px;
-  }
-  
-  section {
-    border:1px solid #e5e5e5;
-    border-width:1px 0;
-    padding:20px 0;
-    margin:0 0 20px;
-  }
-  
-  header a small {
-    display:inline;
-  }
-  
-  header ul {
-    position:absolute;
-    right:50px;
-    top:52px;
-  }
+
+  h2{}
+
+/* --- Background --- */
+
+.background{
+  background: #8A9ECC;
+  height: 530px;
 }
 
-@media print, screen and (max-width: 720px) {
-  body {
-    word-wrap:break-word;
+/* --- Topo Colunm --- */
+
+  .topo{
+    background: #0E2459; /* Old browsers */
+    position: relative;
   }
-  
-  header {
-    padding:0;
+
+  .topo ul{
+    width: 980px;
+    margin: 0 auto;
+    padding: 10px 0;
   }
-  
-  header ul, header p.view {
-    position:static;
+
+  .topo ul li{
+    display: inline;
+    font-weight: 500;
   }
-  
-  pre, code {
-    word-wrap:normal;
+
+  .topo ul li a{
+    color: #999;
+    padding: 3px 10px;
+    text-decoration: none;
+    font-size: 14px;
   }
+
+  .topo ul li a:hover{
+    color: #FFF;
+    background: #071433;
+  }
+
+  .topo ul li.logo{
+    font-weight: 700;
+    font-family: 'Oxygen', sans-serif;
+    color: #FFF;
+    font-size: 16px;
+    margin-right: 40px;
+  }
+
+/* --- Wrapper Colunm --- */
+
+  .wrapper{
+    width: 980px;
+    margin: 40px auto 0;
+  }
+
+/* --- Left Colunm --- */
+
+  .left{
+    width: 220px;
+    float: left;
+    position: fixed;
+  }
+  .left h2{
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .left ul{}
+
+  .left ul h2{
+    margin-top: 20px;
+    font-size: 12px;
+    color: #000;
+    padding-left: 10px;
+  }
+
+  .left ul li{
+    
+  }
+
+  .left ul li:hover{
+    background: #F5F5F5;
+  }
+
+  .left ul li a{
+    text-decoration: none;
+    color: #666;
+    font-size: 13px;
+    padding: 5px 0 5px 10px;
+    display: block;
+    width: 100%;
+  }
+
+  .left ul li a:hover{
+  }
+
+/* --- Right Colunm --- */
+
+  .right{
+    padding-left: 20px;
+    width: 740px;
+    background: ;
+    float: right;
+    height: 2000px;
+    border-left: 1px solid #F5F5F5;
+  }
+
 }
 
-@media print, screen and (max-width: 480px) {
-  body {
-    padding:15px;
-  }
-  
-  header ul {
-    display:none;
-  }
-}
+/* Used to alter styles for screens at least 768px wide. This is where the grid changes. */
+@media only screen and (min-width: 768px) {}
 
-@media print {
-  body {
-    padding:0.4in;
-    font-size:12pt;
-    color:#444;
-  }
-}
+/* Used to alter styles for screens at least 1280px wide. */
+@media only screen and (min-width: 1280px) {}
+
+/* Used to alter styles for screens at least 1440px wide. */
+@media only screen and (min-width: 1440px) {}
+
+/* Apply styles to screens in landscape orientation */
+@media only screen and (orientation: landscape) {}
+
+/* Apply styles to screens in portrait orientation */
+@media only screen and (orientation: portrait) {}
+
+/* We also use Modernizr to add a .touch class to the body when applicable */
+/* You can prepend this class to anything and it will style only for touch devices */
+.touch .your-element {}
